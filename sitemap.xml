@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://moltkex.github.io/publii-blog/sitemap.xsl"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<url>
+<loc>https://moltkex.github.io/publii-blog/</loc>
+</url>
+<url>
+<loc>https://moltkex.github.io/publii-blog/snap-flatpack-and-appimage-a-resource-usage-comparison.html</loc>
+<lastmod>2021-04-16T11:54:16-04:00</lastmod>
+<image:image>
+<image:loc>https://moltkex.github.io/publii-blog/media/posts/1/flatpak_snap_appimage_ram.png</image:loc>
+<image:title><![CDATA[RAM and CPU usage]]></image:title>
+</image:image>
+</url>
+</urlset>

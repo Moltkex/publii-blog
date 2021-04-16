@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://moltkex.github.io/publii-blog/sitemap.xml
