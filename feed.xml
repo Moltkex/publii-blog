@@ -3,42 +3,44 @@
     <title>My Linux Thoughts and Other Stuff</title>
     <link href="https://moltkex.github.io/publii-blog/feed.xml" rel="self" />
     <link href="https://moltkex.github.io/publii-blog" />
-    <updated>2021-04-16T11:54:16-04:00</updated>
+    <updated>2022-03-17T00:20:55-04:00</updated>
     <author>
         <name>Moltkex</name>
     </author>
     <id>https://moltkex.github.io/publii-blog</id>
 
     <entry>
-        <title>Snap, Flatpack and Appimage: a resource usage comparison.</title>
+        <title>Snap, Flatpak and Appimage: a resource usage comparison.</title>
         <author>
             <name>Moltkex</name>
         </author>
         <link href="https://moltkex.github.io/publii-blog/snap-flatpack-and-appimage-a-resource-usage-comparison.html"/>
         <id>https://moltkex.github.io/publii-blog/snap-flatpack-and-appimage-a-resource-usage-comparison.html</id>
 
-        <updated>2021-04-16T11:54:16-04:00</updated>
+        <updated>2022-03-17T00:20:55-04:00</updated>
             <summary>
                 <![CDATA[
-                    This a simple comparison on how Snaps, Flatpacks and Appimages use resources in a Debian Buster VM created with QEMU. While I used Debian, I think this could be done in any other distro and results won't be that different, if any different at all.
+                    I was curious about how snaps, flatpaks and appimages compare to each other in terms of resource usage, so I created a VM in QEMU, installed Debian Buster and made this simple comparison. Though I used Debian, I think this could be done in any&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                <p>This a simple comparison on how Snaps, Flatpacks and Appimages use resources in a Debian Buster VM created with QEMU. While I used Debian, I think this could be done in any other distro and results won't be that different, if any different at all.</p>
-<p>                                                       <strong>The comparison process</strong>:</p>
+                <p>I was curious about how snaps, flatpaks and appimages compare to each other in terms of resource usage, so I created a VM in QEMU, installed Debian Buster and made this simple comparison. Though I used Debian, I think this could be done in any other distro and results won't be that different, if any different at all.</p>
+<p><strong>The comparison process</strong>:</p>
 <ul>
-<li>Installed Ksnip's Snap and Flatpack package and download the appimage.</li>
+<li>Installed Ksnip's Snap and Flatpak package and downloaded the appimage version as well.</li>
 <li><span style="color: var(--text-editor-body-color); font-family: var(--font-base); font-size: inherit; font-weight: var(--font-weight-normal);">Checked disk space before and after installing Snapd.</span></li>
-<li><span style="color: var(--text-editor-body-color); font-family: var(--font-base); font-size: inherit; font-weight: var(--font-weight-normal);">Checked disk space before and after installing Flatpack.</span></li>
-<li><span style="color: var(--text-editor-body-color); font-family: var(--font-base); font-size: inherit; font-weight: var(--font-weight-normal);">Checked Snap, Flatpack and Appimage package RAM and CPU usage with </span><strong style="color: var(--text-editor-body-color); font-family: var(--font-base); font-size: inherit;">htop</strong><span style="color: var(--text-editor-body-color); font-family: var(--font-base); font-size: inherit; font-weight: var(--font-weight-normal);">.</span></li>
+<li><span style="color: var(--text-editor-body-color); font-family: var(--font-base); font-size: inherit; font-weight: var(--font-weight-normal);">Checked disk space before and after installing Flatpak.</span></li>
+<li><span style="color: var(--text-editor-body-color); font-family: var(--font-base); font-size: inherit; font-weight: var(--font-weight-normal);">Checked Snap, Flatpak and Appimage package RAM and CPU usage with </span><strong style="color: var(--text-editor-body-color); font-family: var(--font-base); font-size: inherit;">htop</strong><span style="color: var(--text-editor-body-color); font-family: var(--font-base); font-size: inherit; font-weight: var(--font-weight-normal);">.</span></li>
+<li><span style="color: var(--text-editor-body-color); font-family: var(--font-base); font-size: inherit; font-weight: var(--font-weight-normal);">Checked Snap, Flatpak and Appimage package execution time by launching the app with </span><strong style="color: var(--text-editor-body-color); font-family: var(--font-base); font-size: inherit;">time </strong><span style="color: var(--text-editor-body-color); font-family: var(--font-base); font-size: inherit; font-weight: var(--font-weight-normal);">tool.</span></li>
 </ul>
 <p> <strong>Why Ksnip</strong>?</p>
-<p>Well, it's a small package with almost no dependencies but a little few, plus is the one I use to take screenshots, all the screenshots in this post were taken with it, besides, it's a wonderful app which does what it does really well.  By the way, it is available in Buster via backports, though not the latest which you can get from its GitHub page.</p>
-<p>I won't go into detail on how to install Snapd and/or Flatpack, there's plenty of info on the web about that, nor will I explain how to get or run Appimages, there's plenty of info on that too. </p>
-<p>Before installing Snap and Flatpack disk space available was 5.4GB, after installing both it decreased by 1.8GB, so now it was 3.6GB, with snap using around 600mb and flatpack using as much as 1.2GB! The appimage is only a 27mb download!  </p>
+<p>Ksnip is a small package with almost no dependencies but a little few, plus is the one I use to take screenshots, all the screenshots in this post were taken with it, besides, it's a wonderful app which does what it does and does it really well.  By the way, it is available in Buster via backports, though not the latest which you can get from its <a href="#INTERNAL_LINK#/post/null" title="https://github.com/ksnip/ksnip/releases">GitHub</a> page.</p>
+<p>I won't go into detail on how to install Snapd and Flatpak, there's plenty of info on the web about that, nor will I explain how to get or run Appimages, there's plenty of info on that too.</p>
+<p><strong>Disk Space</strong> </p>
+<p>Before installing Snapd, disk space available was 5.4GB, after installing it decreased by 1.8GB, so now it was 3.6GB. </p>
+<p> </p>
 <figure class="post__image"><img loading="lazy"  src="https://moltkex.github.io/publii-blog/media/posts/1/flatpak_snap_appimage_ram.png" sizes="(max-width: 48em) 100vw, 768px" srcset="https://moltkex.github.io/publii-blog/media/posts/1/responsive/flatpak_snap_appimage_ram-xs.png 300w ,https://moltkex.github.io/publii-blog/media/posts/1/responsive/flatpak_snap_appimage_ram-sm.png 480w ,https://moltkex.github.io/publii-blog/media/posts/1/responsive/flatpak_snap_appimage_ram-md.png 768w ,https://moltkex.github.io/publii-blog/media/posts/1/responsive/flatpak_snap_appimage_ram-lg.png 1024w ,https://moltkex.github.io/publii-blog/media/posts/1/responsive/flatpak_snap_appimage_ram-xl.png 1360w ,https://moltkex.github.io/publii-blog/media/posts/1/responsive/flatpak_snap_appimage_ram-2xl.png 1600w"  alt="RAM and CPU usage" width="685" height="332"></figure>
-<p>The first image is the flatpack pkg, the second one is the snap's and the third one is the appimage. As can be seen, the appimage uses slightly less resources than its counterparts. </p>
 <p> </p>
             ]]>
         </content>
